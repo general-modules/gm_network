@@ -21,21 +21,20 @@ extern "C"
 
 #define GM_NETWORK_VERSION_MAJOR 1
 #define GM_NETWORK_VERSION_MINOR 0
-#define GM_NETWORK_VERSION_PATCH 0
-
+#define GM_NETWORK_VERSION_PATCH 1
 
 // MAC 地址字符串长度(例如: xx:xx:xx:xx:xx:xx)
 #define GM_NETWORK_MAC_ADDRSTRLEN 18
 
 // IPv4 信息
-typedef struct gm_ipv4_info
+typedef struct _gm_ipv4_info_t
 {
     char ip[INET_ADDRSTRLEN]; // IPv4 地址
     uint8_t prefix;           // 子网掩码前缀
 } gm_ipv4_info_t;
 
 // IPv6 信息
-typedef struct gm_ipv6_info
+typedef struct _gm_ipv6_info_t
 {
     char ip[INET6_ADDRSTRLEN]; // IPv6 地址
     uint8_t prefix;            // 子网掩码前缀
